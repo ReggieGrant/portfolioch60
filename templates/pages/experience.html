@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Experience{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/experience.css' %}">
+{% endblock css %}
+
+{% block content %}
+<div class="experience-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold mb-4">My Experience</h1>
+                <p class="lead">A showcase of projects and professional journey</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <!-- Projects Section -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2 class="section-title text-center mb-5">Featured Projects</h2>
+        </div>
+        
+        <div class="col-lg-6 mb-4">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 1" class="img-fluid">
+                    <div class="project-overlay">
+                        <a href="#" class="btn btn-light">View Project</a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Coffe Blog</h3>
+                    <p>
+                        A full-featured online coffe blog built with Django and React. 
+                        Features include user authentication, payment integration, and real-time inventory management.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">React</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Stripe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 2" class="img-fluid">
+                    <div class="project-overlay">
+                        <a href="#" class="btn btn-light">View Project</a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Blogging Platform</h3>
+                    <p>
+                        A blogging management system with real-time updates 
+                        and advanced filtering.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">WebSocket</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">Redis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+{% endblock content %}
